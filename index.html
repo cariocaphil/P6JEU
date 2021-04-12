@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello!</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div>
+    <div id="titleHeader" class="card">
+      <h1>Board Wars</h1>
+      <h2>A Board Game for Two Players</h2>
+    </div>
+    <div id="ruleHeader" class="card">
+      <p>Rules: Press arrow keys for moving your player. Every player has three moves per turn.
+      <p>Try to pick up a good weapon asap. If you move to a field where your opponent is placed, a combat between the
+        two of you will start.</p>
+      <p>During combat every player has only one move per turn. You can decide to defend or attack. During an attack the
+        damage depends on the force of the weapon used for the attack.</p>
+      <p>Each player has 100 life points. The player who first gets the opponent to loose all life points wins.</p>
+    </div>
+    <form id="nameForm" class="card">
+      <label id="input1Label" class="blink">Enter a name for player 1 please.</label>
+        <input type="text" id="namePlayer1" value="">
+      </label>
+      <label id="input2Label" class="blink">Enter a name for player 2 please.</label>
+      <input type="text" id="namePlayer2" value="">
+    </label>
+      <div class="btn-group">
+      <button class="submit">Submit</button>
+    </div>
+      <br>
+      <br>
+  </form>
+  </div>
+    <div id="container" class="card">
+    </div>
+    <div id="otherContainer">
+      <div id="playerInfo">
+        <div id="player1Info" class="card">
+          <img src="./assets/hedgehog.png" alt="image of player 1">
+          <div class="containerCard">
+            <h4><b></b></h4>
+            <p>Player 1</p>
+            <ul></ul>
+          </div>
+        </div>
+
+        <div id="player2Info" class="card">
+          <img src="./assets/rabbit.png" alt="image of player 2">
+          <div class="containerCard">
+            <h4><b></b></h4>
+            <p>Player 2</p>
+            <ul></ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="infoContainer">
+      <div id="playInfo"></div>
+      <div id="combatInfo"></div>
+      <div id="turnInfo"></div>
+      <div id="endOfGame">
+        <div class="btn-group">
+          <button class="restart" >Restart with New Players</button>
+          <button class="restart-again">Restart with Same Players</button>
+          <button class="quit">Quit</button>
+        </div>
+      </div>
+    </div>
+    <div id="goodbyeScreen">
+      <p>THANK YOU FOR PLAYING!</p>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
